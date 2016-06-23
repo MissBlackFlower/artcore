@@ -1,0 +1,101 @@
+// # SHORT HOWTO
+// ## Sprites
+//     .whatever
+// 			+s(codedby)
+// ## gradient example
+//     	+g(#232323, #5c5c5c);
+//	   horizontal
+//     	+gh(#232323, #5c5c5c);
+// ## making bw-images
+//     img
+//			@extend %gray
+// ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
+//     +r(320)
+//			display: none
+// +max-screen(1000), +iphone5, +iphone4, +ipad-retina, +ipad, +hdpi - also available
+//
+// ## use cycles
+//     @for $i from 1 through 3
+//       .item-#{$i}
+//			width: 2em * $i;
+//     @each $s in a,b,c
+// 	    	#{$s}
+//				display: none
+// ## fonts
+// Save fonts to /src/fonts
+// +font(book, cytiapro-black-webfont)
+// and create mixin
+// =book
+// 	font-family: "book", Arial, sans-serif
+
+// fonts
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic|Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800,800italic)
+// mixins
+=R300
+	font-family: "Roboto", Arial, sans-serif
+	font-weight: 300
+=R400
+	font-family: "Roboto", Arial, sans-serif
+	font-weight: 400
+=Os400
+	font-family: "Open Sans", Arial, sans-serif
+	font-weight: 400
+=Os800
+	font-family: "Open Sans", Arial, sans-serif
+	font-weight: 800
+
+// variables
+
+$white: rgb(255, 255, 255)
+$black: rgb(0, 0, 0)
+$gray_txt: rgb(87, 86, 86)
+$gray_lines: rgb(179, 178, 178)
+$header_number: rgb(66, 66, 66)
+$dark-gray_txt: rgb(60, 60, 59)
+$dark-gray_btn: rgb(60, 60, 59)
+$dark-gray_bg: rgb(60, 60, 59)
+$light-gray_txt: rgb(215, 215, 215)
+$light-gray_bg: rgb(235, 235, 235)
+$footer_gray: rgb(148, 148, 148)
+$footer_gray_line: rgb(177, 177, 177)
+
+
+body
+	font-family: Arial, sans-serif
+	line-height: 1.4
+	+font-smoothing(antialiased)
+// common blocks
+.out
+	width: 100%
+	max-width: 1400px
+	margin: auto
+
+.pluses
+	width: 100%
+	overflow: hidden
+	padding: 3% 5%
+	background-color: $dark-gray_bg
+	color: $light-gray_txt
+	line-height: 1.2
+	&__item
+		width: 30%
+		margin: 0 (10%/6)
+		float: left
+	&__textbox
+		float: right
+		width: 80%
+		margin-left: 5%
+	&__title
+		font-size: 26px
+		+Os800
+		text-transform: uppercase
+	&__text
+		font-size: 13px
+		+R300
+	&__img
+		width: 15%
+		display: inline-block
+		svg
+			width: 40px
+			margin: auto 0
+			fill: $light-gray_txt
