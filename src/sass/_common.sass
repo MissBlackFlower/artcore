@@ -44,6 +44,10 @@
 	font-family: "Open Sans", Arial, sans-serif
 	font-weight: 800
 
+=max($width)
+	max-width: $width + px
+	margin: 0 auto
+
 // variables
 
 $white: rgb(255, 255, 255)
@@ -64,38 +68,40 @@ body
 	font-family: Arial, sans-serif
 	line-height: 1.4
 	+font-smoothing(antialiased)
+
 // common blocks
 .out
 	width: 100%
-	max-width: 1400px
-	margin: auto
+	overflow: hidden
 
 .pluses
-	width: 100%
+	+max(1380)
 	overflow: hidden
-	padding: 3% 5%
-	background-color: $dark-gray_bg
+	display: flex
+	flex-flow: row wrap
+	align-items: stretch
+	align-content: center
+	justify-content: space-around
 	color: $light-gray_txt
 	line-height: 1.2
 	&__item
-		width: 30%
-		margin: 0 (10%/6)
+		flex-basis: 360px
+		padding: 20px 0
+	&__img
 		float: left
+		+max(40)
+		margin-top: 50px
+		fill: $light-gray_txt
 	&__textbox
 		float: right
-		width: 80%
-		margin-left: 5%
+		+max(300)
+		margin: 45px 10px
 	&__title
-		font-size: 26px
+		margin-bottom: 5px
 		+Os800
+		font-size: 26px
+		letter-spacing: 2.5px
 		text-transform: uppercase
 	&__text
-		font-size: 13px
 		+R300
-	&__img
-		width: 15%
-		display: inline-block
-		svg
-			width: 40px
-			margin: auto 0
-			fill: $light-gray_txt
+		font-size: 13px
