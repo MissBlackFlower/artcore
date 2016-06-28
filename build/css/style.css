@@ -44,7 +44,7 @@ body { font-family: Arial, sans-serif; line-height: 1.4; -webkit-font-smoothing:
 .out { width: 100%; overflow: hidden; }
 
 .pluses { max-width: 1380px; margin: 0 auto; overflow: hidden; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-flow: row wrap; -ms-flex-flow: row wrap; flex-flow: row wrap; -webkit-box-align: stretch; -webkit-align-items: stretch; -ms-flex-align: stretch; align-items: stretch; -webkit-align-content: center; -ms-flex-line-pack: center; align-content: center; -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; color: #d7d7d7; line-height: 1.2; }
-.pluses__item { -webkit-flex-basis: 360px; -ms-flex-preferred-size: 360px; flex-basis: 360px; padding: 20px 0; }
+.pluses__item { -webkit-flex-basis: 360px; -ms-flex-preferred-size: 360px; flex-basis: 360px; }
 .pluses__img { float: left; max-width: 40px; margin: 0 auto; margin-top: 50px; fill: #d7d7d7; }
 .pluses__textbox { float: right; max-width: 300px; margin: 0 auto; margin: 45px 10px; }
 .pluses__title { margin-bottom: 5px; font-family: "Open Sans", Arial, sans-serif; font-weight: 800; font-size: 26px; letter-spacing: 2.5px; text-transform: uppercase; }
