@@ -39,19 +39,54 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .fa-icon-vk:before { content: ""; }
 
+@font-face { font-family: CoreSans; src: url("fonts/CoreSansBold.eot"); src: url("fonts/CoreSansBold.eot?#iefix") format("embedded-opentype"), url("fonts/CoreSansBold.woff2") format("woff2"), url("fonts/CoreSansBold.woff") format("woff"), url("fonts/CoreSansBold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 body { font-family: Arial, sans-serif; line-height: 1.4; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; }
 
-.out { width: 100%; overflow: hidden; }
+.out, .dark-gray-bg, .light-gray_bg { width: 100%; overflow: hidden; }
 
-.pluses { max-width: 1380px; margin: 0 auto; overflow: hidden; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-flow: row wrap; -ms-flex-flow: row wrap; flex-flow: row wrap; -webkit-box-align: stretch; -webkit-align-items: stretch; -ms-flex-align: stretch; align-items: stretch; -webkit-align-content: center; -ms-flex-line-pack: center; align-content: center; -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; color: #d7d7d7; line-height: 1.2; }
-.pluses__item { -webkit-flex-basis: 360px; -ms-flex-preferred-size: 360px; flex-basis: 360px; }
-.pluses__img { float: left; max-width: 40px; margin: 0 auto; margin-top: 50px; fill: #d7d7d7; }
-.pluses__textbox { float: right; max-width: 300px; margin: 0 auto; margin: 45px 10px; }
+.out { background-color: white; }
+
+.dark-gray-bg { background-color: #3c3c3b; }
+
+.light-gray_bg { background-color: #ebebeb; }
+
+.logo-box { max-width: 1380px; margin: 0 auto; overflow: hidden; position: relative; text-align: center; color: #575656; }
+.logo-box__collection { float: left; width: 35%; padding-top: 25px; }
+.logo-box__collection a { font-family: "Open Sans", Arial, sans-serif; font-weight: 800; font-size: 20px; letter-spacing: 2px; color: #575656; text-decoration: none; text-transform: uppercase; }
+.logo-box__title { float: left; display: inline-block; width: 30%; font-family: "CoreSans", Arial, sans-serif; font-size: 44px; text-transform: uppercase; }
+.logo-box__title a { margin-left: 14px; letter-spacing: 14px; color: #575656; text-decoration: none; }
+.logo-box__subtitle { display: inline-block; width: 100%; font-family: "Open Sans", Arial, sans-serif; font-weight: 400; font-weight: bold; font-size: 12px; letter-spacing: 4px; text-transform: uppercase; }
+.logo-box__subtitle::before, .logo-box__subtitle::after { content: ""; display: inline-block; vertical-align: middle; width: 100%; height: 1px; background-color: #b3b2b2; position: relative; }
+.logo-box__subtitle::before { margin-left: -100%; left: -95px; }
+.logo-box__subtitle::after { margin-right: -100%; right: -95px; }
+.logo-box__conteiner { width: 160px; height: 160px; margin: auto; position: relative; }
+.logo-box__animation { position: absolute; top: 25px; left: 25px; width: 110px; height: 110px; -webkit-border-radius: 50%; border-radius: 50%; -webkit-transition: all 3s; transition: all 3s; z-index: 1; }
+
+.logo { max-width: 124px; margin: 0 auto; position: absolute; top: 18px; left: 18px; z-index: 10; }
+.logo__light-gray { fill: #B3B2B2; }
+.logo__gray { fill: #9D9D9C; }
+.logo__middle-gray, .logo__bg { fill: #878786; }
+.logo__dark-gray { fill: #706F6F; }
+.logo__figure1 { fill: url(#grad-1); }
+.logo__figure2 { fill: url(#grad-2); }
+.logo__figure3 { fill: url(#grad-3); }
+.logo__figure4 { fill: url(#grad-4); }
+.logo:hover ~ .logo-box__animation { -webkit-animation: rotate 2s linear infinite; animation: rotate 2s linear infinite; -webkit-box-shadow: -14.56px -14.56px 0 0 rgba(255, 0, 0, 0.3), -20.384px 0 0 0 rgba(255, 170, 0, 0.3), -14.56px 14.56px 0px 0 rgba(170, 255, 0, 0.3), 0 20.384px 0px 0 rgba(0, 255, 0, 0.3), 14.56px 14.56px 0px 0 rgba(0, 255, 170, 0.3), 20.384px 0 0px 0 rgba(0, 170, 255, 0.3), 14.56px -14.56px 0px 0 rgba(0, 0, 255, 0.3), 0 -20.384px 0px 0 rgba(170, 0, 255, 0.3); box-shadow: -14.56px -14.56px 0 0 rgba(255, 0, 0, 0.3), -20.384px 0 0 0 rgba(255, 170, 0, 0.3), -14.56px 14.56px 0px 0 rgba(170, 255, 0, 0.3), 0 20.384px 0px 0 rgba(0, 255, 0, 0.3), 14.56px 14.56px 0px 0 rgba(0, 255, 170, 0.3), 20.384px 0 0px 0 rgba(0, 170, 255, 0.3), 14.56px -14.56px 0px 0 rgba(0, 0, 255, 0.3), 0 -20.384px 0px 0 rgba(170, 0, 255, 0.3); }
+
+@-webkit-keyframes rotate { 100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
+
+@keyframes rotate { 100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
+.pluses, .partners { max-width: 1380px; margin: 0 auto; overflow: hidden; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-flow: row wrap; -ms-flex-flow: row wrap; flex-flow: row wrap; }
+
+.pluses { -webkit-box-align: stretch; -webkit-align-items: stretch; -ms-flex-align: stretch; align-items: stretch; -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; color: #d7d7d7; line-height: 1.2; }
+.pluses__item { -webkit-flex-basis: 350px; -ms-flex-preferred-size: 350px; flex-basis: 350px; }
+.pluses__img { float: left; max-width: 40px; margin: 0 auto; max-height: 100px; margin-top: 72px; fill: #d7d7d7; }
+.pluses__textbox { float: right; max-width: 300px; margin: 0 auto; margin: 67px 0 67px 10px; }
 .pluses__title { margin-bottom: 5px; font-family: "Open Sans", Arial, sans-serif; font-weight: 800; font-size: 26px; letter-spacing: 2.5px; text-transform: uppercase; }
 .pluses__text { font-family: "Roboto", Arial, sans-serif; font-weight: 300; font-size: 13px; }
 
-.dark-gray-bg { width: 100%; overflow: hidden; background-color: #3c3c3b; }
-
+.partners { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+.partners__logo { margin: 30px; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
 
