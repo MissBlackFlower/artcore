@@ -62,15 +62,11 @@ body { font-family: Arial, sans-serif; line-height: 1.4; -webkit-font-smoothing:
 .logo-box__conteiner { width: 160px; height: 160px; margin: auto; position: relative; }
 .logo-box__animation { position: absolute; top: 25px; left: 25px; width: 110px; height: 110px; -webkit-border-radius: 50%; border-radius: 50%; -webkit-transition: all 3s; transition: all 3s; z-index: 1; }
 
-.logo { max-width: 124px; margin: 0 auto; position: absolute; top: 18px; left: 18px; z-index: 10; }
+.logo { max-width: 124px; margin: 0 auto; height: 124px; position: absolute; top: 18px; left: 18px; z-index: 10; }
 .logo__light-gray { fill: #B3B2B2; }
 .logo__gray { fill: #9D9D9C; }
 .logo__middle-gray, .logo__bg { fill: #878786; }
 .logo__dark-gray { fill: #706F6F; }
-.logo__figure1 { fill: url(#grad-1); }
-.logo__figure2 { fill: url(#grad-2); }
-.logo__figure3 { fill: url(#grad-3); }
-.logo__figure4 { fill: url(#grad-4); }
 .logo:hover ~ .logo-box__animation { -webkit-animation: rotate 2s linear infinite; animation: rotate 2s linear infinite; -webkit-box-shadow: -14.56px -14.56px 0 0 rgba(255, 0, 0, 0.3), -20.384px 0 0 0 rgba(255, 170, 0, 0.3), -14.56px 14.56px 0px 0 rgba(170, 255, 0, 0.3), 0 20.384px 0px 0 rgba(0, 255, 0, 0.3), 14.56px 14.56px 0px 0 rgba(0, 255, 170, 0.3), 20.384px 0 0px 0 rgba(0, 170, 255, 0.3), 14.56px -14.56px 0px 0 rgba(0, 0, 255, 0.3), 0 -20.384px 0px 0 rgba(170, 0, 255, 0.3); box-shadow: -14.56px -14.56px 0 0 rgba(255, 0, 0, 0.3), -20.384px 0 0 0 rgba(255, 170, 0, 0.3), -14.56px 14.56px 0px 0 rgba(170, 255, 0, 0.3), 0 20.384px 0px 0 rgba(0, 255, 0, 0.3), 14.56px 14.56px 0px 0 rgba(0, 255, 170, 0.3), 20.384px 0 0px 0 rgba(0, 170, 255, 0.3), 14.56px -14.56px 0px 0 rgba(0, 0, 255, 0.3), 0 -20.384px 0px 0 rgba(170, 0, 255, 0.3); }
 
 @-webkit-keyframes rotate { 100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
