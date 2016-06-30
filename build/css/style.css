@@ -54,9 +54,9 @@ body { font-family: Arial, sans-serif; line-height: 1.4; -webkit-font-smoothing:
 .header__nav { width: 100%; text-align: center; }
 .header__nav li { display: inline-block; margin: 0 12px; }
 .header__links { font-family: "Roboto", Arial, sans-serif; font-weight: 400; font-size: 13px; line-height: 68px; color: #575656; text-decoration: none; }
-.header__tel-basket { position: absolute; right: 0; top: 50%; -webkit-transform: translate(0, -50%); -ms-transform: translate(0, -50%); transform: translate(0, -50%); }
-.header__tel { font-family: "Roboto", Arial, sans-serif; font-weight: 500; font-size: 13px; color: #424242; float: right; margin-right: 35px; }
-.header__basket { width: 23px; float: right; margin-right: 20px; }
+.header__tel-basket { position: absolute; height: 68px; right: 0; top: 50%; -webkit-transform: translate(0, -50%); -ms-transform: translate(0, -50%); transform: translate(0, -50%); }
+.header__tel { float: right; margin-right: 35px; font-family: "Roboto", Arial, sans-serif; font-weight: 500; font-size: 13px; line-height: 68px; color: #424242; }
+.header__basket { float: right; margin-right: 20px; width: 23px; height: 68px; }
 
 .top-line { position: relative; }
 .top-line__gray, .top-line__white { margin: 0; border: none; width: 100%; height: 1px; background-color: #b3b2b2; }
