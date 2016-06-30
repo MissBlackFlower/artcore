@@ -1,1 +1,57 @@
-
+.gallery
+  +max(1380)
+  margin: 25px auto
+  position: relative
+  figure
+    position: absolute
+    left: 0
+    top: 90px
+    z-index: 2000
+    width: 139px
+    height: 57px
+    background-color: $white
+    text-align: center
+  figcaption
+    +Os800
+    font-size: 20px
+    color: $dark-gray_txt
+    text-transform: uppercase
+    line-height: 57px
+  &__conteiner,
+  &__slide
+    width: 100%
+.catalog
+  +max(1250)
+  text-align: center
+  &__conteiner
+    display: flex
+    flex-flow: row wrap
+    align-items: stretch
+    justify-content: space-around
+  &__item
+    flex-basis: 218px
+    height: 318px
+    margin-bottom: 25px
+    border: 1px solid $gray_lines
+    text-decoration: none
+  &__img
+    max-width: 177px
+    margin: 35px auto
+  &__item-text
+    width: 100%
+    +R400
+    font-size: 18px
+    color: $dark-gray_txt
+  &__link
+    display: inline-block
+    clear: both
+    width: 220px
+    margin-bottom: 25px
+    +Os800
+    font-size: 20px
+    line-height: 67px
+    letter-spacing: 2px
+    text-decoration: none
+    text-transform: uppercase
+    color: $light-gray_txt
+    background-color: $dark-gray_btn
