@@ -68,36 +68,77 @@ body
 .header
 	+max(1380)
 	position: relative
-	&__nav
+	&__nav,
+	&__menu
 		width: 100%
 		text-align: center
 		li
 			display: inline-block
 			margin: 0 12px
-	&__links
+	&__menu
+		.is-active
+			text-decoration: underline
+			color: $white
+	&__links,
+	&__menu-links
 		+R400
 		font-size: 13px
 		line-height: 68px
+		letter-spacing: 0.3px
 		color: $gray_txt
 		text-decoration: none
-	&__tel-basket
+	&__tel-basket,
+	&__logo
 		position: absolute
-		height: 68px
 		right: 0
 		top: 50%
 		transform: translate(0, -50%)
-	&__tel
+	&__tel,
+	&__tel-store
 		float: right
 		margin-right: 35px
 		+R500
 		font-size: 13px
 		line-height: 68px
 		color: $header_number
+	&__tel-store,
+	&__menu-links
+		color: $light-gray_txt
 	&__basket
 		float: right
 		margin-right: 20px
 		width: 23px
 		height: 68px
+		.basket
+			fill: $gray_txt
+		.shop
+			fill: $light-gray_txt
+	&__logo
+		left: 20px
+		display: block
+		width: 260px
+		text-decoration: none
+		text-transform: uppercase
+		color: $gray_lines
+	&__logo-img,
+	&__logo-txt
+		display: inline-block
+		vertical-align: middle
+	&__logo-img
+		height: 51px
+		width: 51px
+	&__logo-txt
+		width: 200px
+		text-align: center
+		h1
+			margin-bottom: -9px
+			+CS-b
+			font-size: 24px
+			letter-spacing: 9px
+		span
+			+Os400
+			font-size: 7px
+			letter-spacing: 2.5px
 
 
 .top-line
@@ -209,6 +250,12 @@ body
 
 .hidden
 	display: none
+
+.sidebar
+	transition: all 3s
+	&__submenu
+		display: none
+
 
 .pluses,
 .partners

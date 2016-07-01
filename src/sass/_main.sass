@@ -55,3 +55,37 @@
     text-transform: uppercase
     color: $light-gray_txt
     background-color: $dark-gray_btn
+.types
+  +max(1200)
+  overflow: hidden
+  &__list
+    width: 100%
+    overflow: inherit
+  &__cell
+    float: left
+    width: 10%
+    padding: 25px 10px
+  &__link
+    display: block
+    text-decoration: none
+    +Os800
+    font-size: 13px
+    text-transform: uppercase
+    color: $dark-gray_txt
+    text-align: center
+    img
+      height: 90px
+      width: 90px
+      display: inline-block
+    span
+      display: inline-block
+      vertical-align: bottom
+      padding: 10px 0
+      width: 100%
+      transition: all 1s
+    .is-active,
+    &:hover,
+    &:active
+      color: $light-gray_txt
+      span
+        background-color: $dark-gray_bg
