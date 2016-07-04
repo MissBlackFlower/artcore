@@ -34,6 +34,9 @@
     margin-bottom: 25px
     border: 1px solid $gray_lines
     text-decoration: none
+    &:hover,
+    &:active
+      border: 1px solid $dark-gray_btn
   &__img
     max-width: 177px
     margin: 35px auto
@@ -55,9 +58,16 @@
     text-transform: uppercase
     color: $light-gray_txt
     background-color: $dark-gray_btn
+    &:hover,
+    &:active
+      background-color: $light-gray_bg
+      color: $dark-gray-bg
+      box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.5)
 .types
   +max(1200)
   overflow: hidden
+  &__btn
+    display: none
   &__list
     width: 100%
     overflow: inherit
@@ -89,3 +99,66 @@
       color: $light-gray_txt
       span
         background-color: $dark-gray_bg
+
+.content
+  +max(1200)
+  overflow: hidden
+  padding: 40px 0
+  text-align: center
+  &__box
+    width: 80%
+    float: right
+    display: flex
+    flex-flow: row wrap
+    align-items: stretch
+    justify-content: space-around
+  &__btn
+    display: none
+.product
+  flex-basis: 214px
+  min-height: 322px
+  margin-bottom: 25px
+  border: 2px solid transparent
+  text-decoration: none
+  transition: all 0.5s ease
+  position: relative
+  &:hover
+    border: 2px solid $dark-gray_bg
+    .product__sizes
+      opacity: 1
+    .product__price
+      padding: 10px 35px
+      margin-bottom: -7px
+      background-color: $dark-gray_bg
+      color: $price-hover
+
+  &__sizes
+    transition: all 0.5s ease
+    opacity: 0
+    min-height: 30px
+    span
+      display: inline-block
+      min-width: 26px
+      line-height: 30px
+      background-color: $dark-gray_bg
+      +R400
+      font-size: 15px
+      color: $white
+      text-transform: uppercase
+  &__img
+    max-width: 177px
+    margin: 20px auto 10px auto
+  &__name
+    display: inline-block
+    width: 100%
+    +R400
+    font-size: 18px
+    color: $dark-gray_txt
+  &__price
+    transition: all 0.1s ease
+    display: inline-block
+    padding: 10px 35px
+    margin-bottom: -7px
+    +R300
+    font-size: 24px
+    color: $dark-gray_txt

@@ -58,11 +58,13 @@
       </a>
       <p class="header__tel-store">+7 (495) 888 77 665</p>
     </div>
+    <button type="button" name="button" class="btn-menu"></button>
   </header>
 </div>
 
 <div class="light-gray_bg">
   <div class="types">
+		<button type="button" name="button" class="types__btn">Тип одежды </button>
     <ul class="types__list">
       <li class="types__cell"><a class="types__link" href="#"><img src="img/type1.png" alt=""><span>футболки</span></a></li>
       <li class="types__cell"><a class="types__link" href="#"><img src="img/type2.png" alt=""><span>поло</span></a></li>
@@ -77,35 +79,194 @@
     </ul>
   </div>
 </div>
-<div class="sidebar">
-  <ul class="sidebar__menu">
-    <li class="sidebar__cell"><a href="" class="sidebar__link js-toggle-link">Природа</a>
-        <ul class="sidebar__submenu">
-          <li><a href="" class="sidebar__link">Стихия</a></li>
-          <li><a href="" class="sidebar__link">Marco</a></li>
-          <li><a href="" class="sidebar__link">Цветы</a></li>
-          <li><a href="" class="sidebar__link">Пейзаж</a></li>
-        </ul>
-    </li>
-    <li class="sidebar__cell"><a href="" class="sidebar__link js-toggle-link">Природа</a>
-        <ul class="sidebar__submenu">
-          <li><a href="" class="sidebar__link">Стихия</a></li>
-          <li><a href="" class="sidebar__link">Marco</a></li>
-          <li><a href="" class="sidebar__link">Цветы</a></li>
-          <li><a href="" class="sidebar__link">Пейзаж</a></li>
-        </ul>
-    </li>
-    <li class="sidebar__cell"><a href="" class="sidebar__link js-toggle-link">Природа</a>
-        <ul class="sidebar__submenu">
-          <li><a href="" class="sidebar__link">Стихия</a></li>
-          <li><a href="" class="sidebar__link">Marco</a></li>
-          <li><a href="" class="sidebar__link">Цветы</a></li>
-          <li><a href="" class="sidebar__link">Пейзаж</a></li>
-        </ul>
-    </li>
-  </ul>
+<div class="content">
+	<button type="button" name="button" class="content__btn">Принт</button>
+	<div class="sidebar">
+	  <ul class="sidebar__menu">
+	    <li class="sidebar__cell"><a href="" class="sidebar__link js-toggle-link">Путин</a>
+	        <ul class="sidebar__submenu">
+	          <li><a href="#" class="sidebar__sublink">Стихия</a></li>
+	          <li><a href="#" class="sidebar__sublink">Marco</a></li>
+	          <li><a href="#" class="sidebar__sublink">Цветы</a></li>
+	          <li><a href="#" class="sidebar__sublink">Пейзаж</a></li>
+	        </ul>
+	    </li>
+	    <li class="sidebar__cell"><a href="" class="sidebar__link js-toggle-link">Живопись</a>
+	        <ul class="sidebar__submenu">
+	          <li><a href="#" class="sidebar__sublink">Стихия</a></li>
+	          <li><a href="#" class="sidebar__sublink">Marco</a></li>
+	          <li><a href="#" class="sidebar__sublink">Цветы</a></li>
+	          <li><a href="#" class="sidebar__sublink">Пейзаж</a></li>
+	        </ul>
+	    </li>
+	    <li class="sidebar__cell is-active"><a href="" class="sidebar__link js-toggle-link">Природа</a>
+	        <ul class="sidebar__submenu">
+	          <li><a href="#" class="sidebar__sublink">Стихия</a></li>
+	          <li><a href="#" class="sidebar__sublink">Marco</a></li>
+	          <li><a href="#" class="sidebar__sublink">Цветы</a></li>
+	          <li><a href="#" class="sidebar__sublink">Пейзаж</a></li>
+	        </ul>
+	    </li>
+	    <li class="sidebar__cell"><a href="#" class="sidebar__link js-toggle-link">Животный мир</a></li>
+	    <li class="sidebar__cell"><a href="#" class="sidebar__link js-toggle-link">Спорт</a></li>
+	    <li class="sidebar__cell"><a href="#" class="sidebar__link js-toggle-link">Мультфильмы</a></li>
+	    <li class="sidebar__cell"><a href="#" class="sidebar__link js-toggle-link">Сериалы</a></li>
+	    <li class="sidebar__cell"><a href="#" class="sidebar__link js-toggle-link">Кино</a>
+	        <ul class="sidebar__submenu">
+	          <li><a href="#" class="sidebar__sublink">Стихия</a></li>
+	          <li><a href="#" class="sidebar__sublink">Marco</a></li>
+	          <li><a href="#" class="sidebar__sublink">Цветы</a></li>
+	          <li><a href="#" class="sidebar__sublink">Пейзаж</a></li>
+	        </ul>
+	    </li>
+	    <li class="sidebar__cell"><a href="" class="sidebar__link js-toggle-link">food</a></li>
+	    <li class="sidebar__cell"><a href="" class="sidebar__link js-toggle-link">travel</a>
+	        <ul class="sidebar__submenu">
+	          <li><a href="#" class="sidebar__sublink">Стихия</a></li>
+	          <li><a href="#" class="sidebar__sublink">Marco</a></li>
+	          <li><a href="#" class="sidebar__sublink">Цветы</a></li>
+	          <li><a href="#" class="sidebar__sublink">Пейзаж</a></li>
+	        </ul>
+	    </li>
+	    <li class="sidebar__cell"><a href="" class="sidebar__link js-toggle-link">Музыка</a></li>
+	  </ul>
+	</div>
+	
+	<div class="content__box">
+		<a href="#" class="product">
+			<div class="product__sizes">
+				<span>XS</span>
+				<span>S</span>
+				<span>M</span>
+				<span>XL</span>
+			</div>
+			<img src="img/t-shirt2.png" alt="" class="product__img">
+			<span class="product__name">свитшот</span>
+			<p class="product__price">250 p.</p>
+		</a>
+		<a href="#" class="product">
+			<div class="product__sizes">
+				<span>XS</span>
+				<span>S</span>
+				<span>M</span>
+				<span>XL</span>
+			</div>
+			<img src="img/t-shirt3.png" alt="" class="product__img">
+			<span class="product__name">топик</span>
+			<p class="product__price">250 p.</p>
+		</a>
+		<a href="#" class="product">
+			<div class="product__sizes">
+				<span>XS</span>
+				<span>S</span>
+				<span>M</span>
+				<span>XL</span>
+			</div>
+			<img src="img/t-shirt4.png" alt="" class="product__img">
+			<span class="product__name">боди</span>
+			<p class="product__price">250 p.</p>
+		</a>
+		<a href="#" class="product">
+			<div class="product__sizes">
+				<span>XS</span>
+				<span>S</span>
+				<span>M</span>
+				<span>XL</span>
+			</div>
+			<img src="img/t-shirt5.png" alt="" class="product__img">
+			<span class="product__name">шорты</span>
+			<p class="product__price">250 p.</p>
+		</a>
+		<a href="#" class="product">
+			<div class="product__sizes">
+				<span>XS</span>
+				<span>S</span>
+				<span>M</span>
+				<span>XL</span>
+			</div>
+			<img src="img/t-shirt2.png" alt="" class="product__img">
+			<span class="product__name">свитшот</span>
+			<p class="product__price">250 p.</p>
+		</a>
+		<a href="#" class="product">
+			<div class="product__sizes">
+				<span>XS</span>
+				<span>S</span>
+				<span>M</span>
+				<span>XL</span>
+			</div>
+			<img src="img/t-shirt3.png" alt="" class="product__img">
+			<span class="product__name">топик</span>
+			<p class="product__price">250 p.</p>
+		</a>
+		<a href="#" class="product">
+			<div class="product__sizes">
+				<span>XS</span>
+				<span>S</span>
+				<span>M</span>
+				<span>XL</span>
+			</div>
+			<img src="img/t-shirt4.png" alt="" class="product__img">
+			<span class="product__name">боди</span>
+			<p class="product__price">250 p.</p>
+		</a>
+		<a href="#" class="product">
+			<div class="product__sizes">
+				<span>XS</span>
+				<span>S</span>
+				<span>M</span>
+				<span>XL</span>
+			</div>
+			<img src="img/t-shirt5.png" alt="" class="product__img">
+			<span class="product__name">шорты</span>
+			<p class="product__price">250 p.</p>
+		</a>
+		<a href="#" class="product">
+			<div class="product__sizes">
+				<span>XS</span>
+				<span>S</span>
+				<span>M</span>
+				<span>XL</span>
+			</div>
+			<img src="img/t-shirt2.png" alt="" class="product__img">
+			<span class="product__name">свитшот</span>
+			<p class="product__price">250 p.</p>
+		</a>
+		<a href="#" class="product">
+			<div class="product__sizes">
+				<span>XS</span>
+				<span>S</span>
+				<span>M</span>
+				<span>XL</span>
+			</div>
+			<img src="img/t-shirt3.png" alt="" class="product__img">
+			<span class="product__name">топик</span>
+			<p class="product__price">250 p.</p>
+		</a>
+		<a href="#" class="product">
+			<div class="product__sizes">
+				<span>XS</span>
+				<span>S</span>
+				<span>M</span>
+				<span>XL</span>
+			</div>
+			<img src="img/t-shirt4.png" alt="" class="product__img">
+			<span class="product__name">боди</span>
+			<p class="product__price">250 p.</p>
+		</a>
+		<a href="#" class="product">
+			<div class="product__sizes">
+				<span>XS</span>
+				<span>S</span>
+				<span>M</span>
+				<span>XL</span>
+			</div>
+			<img src="img/t-shirt5.png" alt="" class="product__img">
+			<span class="product__name">шорты</span>
+			<p class="product__price">250 p.</p>
+		</a>
+	</div>
 </div>
-
 <div class="dark-gray-bg">
   <section class="pluses">
    <div class="pluses__item">
@@ -174,8 +335,8 @@
       </ul>
     </div>
   </div>
-  <div class="footer__tel"><p>+7 495 888 777 666</p></div>
-  <p class="footer__copyright">Разработка и продвижение сайта <span>advcreative</span></p>
+  <div class="footer__tel"><a href="#">+7 495 888 777 666</a ></div>
+  <p class="footer__copyright">Разработка и продвижение сайта <a href="#">advcreative</a></p>
 </footer>
 
 </div>

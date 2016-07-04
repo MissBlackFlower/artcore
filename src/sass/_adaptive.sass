@@ -1,0 +1,249 @@
+.header
+  +r(1000)
+    &__nav,
+    &__menu
+      text-align: left
+    &__logo
+      position: static
+      float: left
+      width: 51px
+      margin: 9px 0
+      transform: none
+    &__logo-txt
+      display: none
+  +r(780)
+    height: 69px
+    &__nav
+      display: none
+    .btn-nav
+      display: block
+      width: 50px
+      height: 68px
+      background-color: $white
+      color: $dark-gray_txt
+      position: fixed
+      top: 0
+      left: 0
+      z-index: 3000
+      &::before
+        content: ('\2630')
+        font-size: 30px
+        vertical-align: middle
+    .open-menu,
+    .open-nav
+      display: block
+      position: fixed
+      background-color: $dark-gray_bg
+      top: 0
+      left: 0
+      z-index: 2999
+    .open-nav
+      background-color: $white
+    &__nav
+      display: none
+      text-align: center
+      clear: both
+      a
+        display: inline-block
+        width: 75%
+        text-transform: uppercase
+        &:active
+          color: $white
+          background-color: $dark-gray_bg
+      li
+        display: block
+  +r(680)
+    &__tel-basket
+      top: 0
+      right: auto
+      left: 55px
+      transform: none
+    &__menu
+      display: none
+      text-align: center
+      clear: both
+      a
+        display: inline-block
+        width: 75%
+        text-transform: uppercase
+        &:active
+          color: $dark-gray_txt
+          background-color: $light-gray_bg
+      li
+        display: block
+    .btn-menu
+      display: block
+      width: 50px
+      height: 68px
+      background-color: $dark-gray_btn
+      color: $white
+      position: fixed
+      top: 0
+      right: 0
+      z-index: 3000
+      &::before
+        content: ('\2630')
+        font-size: 30px
+        vertical-align: middle
+//
+//
+.logobox
+  +r(1050)
+    .show
+      display: none
+    .hidden
+      display: block
+    &__collection
+      width: 50%
+      padding: 20px
+    &__title
+      width: 100%
+  +r(420)
+    &__collection
+      a
+        font-size: 14px
+      &:hover,
+      &:active
+        background-color: $dark-gray_bg
+        a
+          color: $light-gray_txt
+    &__title
+      font-size: 38px
+    &__subtitle
+      font-size: 10px
+      &::before
+        left: -35px
+      &::after
+        right: -35px
+//
+//
+.gallery
+  +r(780)
+    figure
+      top: 20px
+      width: 100px
+      height: 40px
+    figcaption
+      font-size: 14px
+      line-height: 40px
+  +r(380)
+    figure
+      display: none
+//
+//
+.pluses
+  +r(370)
+    &__item
+      flex-basis: 310px
+    &__img
+      width: 20%
+      margin-top: 42px
+    &__textbox
+      width: 75%
+      margin: 37px 2.5%
+    &__title
+      font-size: 18px
+//
+//
+.footer
+  +r(1050)
+    &__soc,
+    &__menu,
+    &__tel,
+      width: 100%
+      text-align: center
+      margin: 10px 0
+    &__soc-icons,
+    &__tel a
+      float: none
+      display: inline-block
+//
+//
+.types
+  +r(1020)
+    &__btn
+      display: inline-block
+      width: 100%
+      padding: 2% 10%
+      +Os800
+      font-size: 14px
+      text-transform: uppercase
+      color: $dark-gray_txt
+      text-align: center
+      background-color: transparent
+      letter-spacing: 2px
+      &::after
+        display: inline-block
+        content: ('\27A4')
+        font-size: 14px
+        transform: rotate(90deg)
+    &__cell
+      width: 20%
+    &__list
+      display: none
+  +r(620)
+    &__cell
+      width: 50%
+  +r(320)
+    &__btn
+    border-bottom: 1px solid $gray_lines
+    &__cell
+      +max(318)
+      border: 1px solid $gray_lines
+//
+//
+.sidebar
+  +r(1020)
+    width: 100%
+    padding-right: 0
+    &__menu
+      +max(300)
+      display: none
+  +r(380)
+    .is-active::after,
+    &__cell::after
+      content: ('')
+    &__submenu
+      padding: 0
+    &__cell
+      text-align: center
+      padding: 5px 0
+    &__link
+      font-size: 18px
+      line-height: 26px
+    &__sublink
+      font-size: 16px
+      line-height: 22px
+    &__link,
+    &__sublink
+      display: inline-block
+      width: 100%
+      &:active,
+      &:hover
+        color: $light-gray_txt
+        background-color: $dark-gray_bg
+.content
+  +r(1020)
+    padding: 0
+    &__box
+      width: 100%
+      padding: 2%
+    &__btn
+      display: inline-block
+      width: 100%
+      padding: 2% 10%
+      +Os800
+      font-size: 14px
+      text-transform: uppercase
+      color: $dark-gray_txt
+      text-align: center
+      background-color: transparent
+      letter-spacing: 2px
+      &::after
+        display: inline-block
+        content: ('\27A4')
+        font-size: 14px
+        transform: rotate(90deg)
+  +r(320)
+    &__btn
+      border-bottom: 1px solid $gray_lines
