@@ -186,7 +186,8 @@ body { font-family: Arial, sans-serif; line-height: 1.4; -webkit-font-smoothing:
 @media only screen and (max-width: 1200px){
  .types__btn{ display: inline-block; width: 100%; padding: 2% 10%; font-family: "Open Sans", Arial, sans-serif; font-weight: 800; font-size: 14px; text-transform: uppercase; color: #3c3c3b; text-align: center; background-color: transparent; letter-spacing: 2px; }
  .types__btn::after{ display: inline-block; content: "➤"; font-size: 14px; -webkit-transform: rotate(90deg); -ms-transform: rotate(90deg); transform: rotate(90deg); }
- .types__cell{ width: 20%; } }
+ .types__cell{ width: 20%; }
+ .types__list{ display: none; } }
 @media only screen and (max-width: 1050px){
  .logobox .show{ display: none; }
  .logobox .hidden{ display: block; }

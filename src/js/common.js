@@ -67,7 +67,10 @@ $(document).ready(function() {
 			return false;
 	});
 
+	$(window).resize(function() {
+		var types = $('.types__list');
+		var sidebar = $('.sidebar__menu');
+		types.removeAttr('style');
+		sidebar.removeAttr('style');
+	});
 });
-// $(window).resize.(function() {
-//
-// });
