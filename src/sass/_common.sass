@@ -284,13 +284,15 @@ body
 		padding-left: 20px
 	&__cell
 		position: relative
-	&__cell::after
-		content: ('+')
-		position: absolute
-		right: 0
-		top: 0
+		&::after
+			content: ('+')
+			position: absolute
+			right: 0
+			top: 0
 	&__link,
 	&__sublink
+		display: inline-block
+		width: 100%
 		text-decoration: none
 		color: $dark-gray_txt
 		&:hover,

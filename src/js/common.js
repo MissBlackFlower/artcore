@@ -46,11 +46,11 @@ $(document).ready(function() {
 		var list = $('.types__list');
 		if (list.css('display') == 'none')
         {
-            list.animate({height: 'show'}, 800);
+            list.slideDown(700);
         }
     else
         {
-            list.animate({height: 'hide'}, 800);
+            list.slideUp(700);
         }
 			return false;
 	});
@@ -58,13 +58,16 @@ $(document).ready(function() {
 		var list = $('.sidebar__menu');
 		if (list.css('display') == 'none')
         {
-            list.animate({height: 'show'}, 800);
+            list.slideDown(700);
         }
     else
         {
-            list.animate({height: 'hide'}, 800);
-        }
+            list.slideUp(700);
+        };
 			return false;
 	});
 
 });
+// $(window).resize.(function() {
+//
+// });

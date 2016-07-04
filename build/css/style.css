@@ -108,7 +108,7 @@ body { font-family: Arial, sans-serif; line-height: 1.4; -webkit-font-smoothing:
 .sidebar__submenu { display: none; padding-left: 20px; }
 .sidebar__cell { position: relative; }
 .sidebar__cell::after { content: "+"; position: absolute; right: 0; top: 0; }
-.sidebar__link, .sidebar__sublink { text-decoration: none; color: #3c3c3b; }
+.sidebar__link, .sidebar__sublink { display: inline-block; width: 100%; text-decoration: none; color: #3c3c3b; }
 .sidebar__link:hover, .sidebar__link:active, .sidebar__sublink:hover, .sidebar__sublink:active { text-decoration: underline; }
 .sidebar__link { font-family: "Open Sans", Arial, sans-serif; font-weight: 600; font-size: 15px; text-transform: uppercase; }
 .sidebar__sublink { font-family: "Open Sans", Arial, sans-serif; font-weight: 400; font-size: 13px; }
@@ -186,8 +186,7 @@ body { font-family: Arial, sans-serif; line-height: 1.4; -webkit-font-smoothing:
 @media only screen and (max-width: 1200px){
  .types__btn{ display: inline-block; width: 100%; padding: 2% 10%; font-family: "Open Sans", Arial, sans-serif; font-weight: 800; font-size: 14px; text-transform: uppercase; color: #3c3c3b; text-align: center; background-color: transparent; letter-spacing: 2px; }
  .types__btn::after{ display: inline-block; content: "➤"; font-size: 14px; -webkit-transform: rotate(90deg); -ms-transform: rotate(90deg); transform: rotate(90deg); }
- .types__cell{ width: 20%; }
- .types__list{ display: none; } }
+ .types__cell{ width: 20%; } }
 @media only screen and (max-width: 1050px){
  .logobox .show{ display: none; }
  .logobox .hidden{ display: block; }
