@@ -81,7 +81,6 @@ body
 			display: inline-block
 			margin: 0 12px
 	&__menu
-		&:hover,
 		.is-active
 			text-decoration: underline
 			color: $white
@@ -96,6 +95,9 @@ body
 		&:hover,
 		&:active
 			text-decoration: underline
+	&__menu-links
+		&:hover
+			color: $white
 	&__tel-basket,
 	&__logo
 		position: absolute
@@ -109,6 +111,7 @@ body
 		+R500
 		font-size: 13px
 		line-height: 68px
+		text-decoration: none
 		color: $header_number
 	&__tel-store,
 	&__menu-links
@@ -257,7 +260,7 @@ body
 	width: 110px
 	height: 110px
 	border-radius: 50%
-	transition: all 3s
+	transition: all 2s
 	z-index: 1
 @keyframes rotate
 	100%

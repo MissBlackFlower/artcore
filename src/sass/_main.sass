@@ -24,14 +24,12 @@
   +max(1250)
   text-align: center
   &__conteiner
-    display: flex
-    flex-flow: row wrap
-    align-items: stretch
-    justify-content: space-around
+    width: 100%
   &__item
-    flex-basis: 218px
-    height: 318px
-    margin-bottom: 25px
+    display: inline-block
+    margin: 0 13px 25px 13px
+    width: 220px
+    height: 320px
     border: 1px solid $gray_lines
     text-decoration: none
     &:hover,
@@ -74,6 +72,7 @@
   &__cell
     float: left
     width: 10%
+    min-width: 100px
     padding: 25px 10px
   &__link
     display: block
@@ -92,7 +91,7 @@
       vertical-align: bottom
       padding: 10px 0
       width: 100%
-      transition: all 1s
+      transition: all 0.2s ease
     .is-active,
     &:hover,
     &:active
@@ -108,16 +107,14 @@
   &__box
     width: 80%
     float: right
-    display: flex
-    flex-flow: row wrap
-    align-items: stretch
-    justify-content: space-around
+    text-align: center
   &__btn
     display: none
 .product
-  flex-basis: 214px
+  display: inline-block
+  max-width: 220px
   min-height: 322px
-  margin-bottom: 25px
+  margin: 0 8px 25px 8px
   border: 2px solid transparent
   text-decoration: none
   transition: all 0.5s ease
@@ -131,7 +128,6 @@
       margin-bottom: -7px
       background-color: $dark-gray_bg
       color: $price-hover
-
   &__sizes
     transition: all 0.5s ease
     opacity: 0
@@ -147,6 +143,7 @@
       text-transform: uppercase
   &__img
     max-width: 177px
+    height: 188px
     margin: 20px auto 10px auto
   &__name
     display: inline-block
